@@ -5,7 +5,7 @@ sequenceDiagram
     
     browser->>server: POST /new_note
     activate server
-    server-->>browser: Code 
+    server-->>browser: Code 302
     deactivate server
     
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
