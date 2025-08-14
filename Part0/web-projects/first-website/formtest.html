@@ -11,6 +11,28 @@
       <h1>Welcome to the Form Page</h1>
       <h2>Here, you will make a form (Hopefully)</h2>
       <p>Let's see if that works!</p>
+
+      <!--
+        forms 
+          Method HTTP method
+          Action = Url to send data to
+      -->
+      <form action="/my-handling-form-page" method="post">
+        <p>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user_name" />
+        </p>
+        <p>
+          <label for="mail">Email:</label>
+          <input type="email" id="mail" name="user_email" />
+        </p>
+        <p>
+          <label for="msg">Message:</label>
+          <textarea id="msg" name="user_message"></textarea>
+        </p>
+          <button class="button" type="submit">Send your message</button>
+      </form>
+      
       <a href="index.html">Return To Main Page</a>
     </div>
   </body>

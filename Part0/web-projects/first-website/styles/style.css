@@ -3,6 +3,19 @@ body{
     background-color: #00bbff;
 }
 
+button{
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem;
+    background-color: #00ddbb;
+    font-size: 1.5rem;
+    
+}
+
+textarea{
+    margin-top: 0.5rem;
+}
+
 .container{
     background-color: #ffa000;
     padding: 5%;
@@ -32,6 +45,7 @@ p{
   border: 0.3rem solid gray;
   background-color: white;  
   font-size: 1.5rem;
+  padding-bottom: 0.2rem;
 }
 
 ul{
