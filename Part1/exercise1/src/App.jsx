@@ -1,16 +1,19 @@
-const course = 'Half Stack application development'
+const course = {name:'Half Stack application development',
+                parts: [
+                        {name:'Fundamentals of React',numExercises :10},
+                        {name:'Using props to pass data',numExercises :7},
+                        {name:'State of a component',numExercises :14}
+                        ]
+               }
 
-const parts=[
-           {name:'Fundamentals of React',numExercises :10},
-           {name:'Using props to pass data',numExercises :7},
-           {name:'State of a component',numExercises :14}
-          ]
+
+console.log("Hola",course.parts[1].name)
 
 
 const Header = () => {
   return (
     <div>
-      <h1>{course}</h1>
+      <h1>{course.name}</h1>
     </div>
   )
 }
@@ -18,7 +21,7 @@ const Header = () => {
 const Part =({partNumber})=>{
  return(
   <div>
-    <p>{parts[partNumber].name} : {parts[partNumber].numExercises}</p>
+   <p>{course.parts[partNumber].name} : {course.parts[partNumber].numExercises} </p>
   </div>
   
  )
