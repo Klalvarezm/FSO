@@ -5,8 +5,6 @@ const Statistics = (props) => {
   if (props.good < 1 && props.neutral < 1 && props.bad < 1) {
     return (
       <div>
-        <br></br>
-        <br></br>
         <h2>No Feeback has been provided</h2>
       </div>
     )
