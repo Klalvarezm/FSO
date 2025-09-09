@@ -64,7 +64,7 @@ const App = () => {
     //iterator.map(function(currentValue, index, arr), thisValue)
     //1. take old array anecVotes, and put it into map
     //2.currVote would be the vote at an specific index
-    //3.indexIterator would be an i inside a for
+    //3.indexIterator would be like an i inside a for
     //4. it goes to an arrow funcion to change values
     //5. change values according to index and conditions
     //6. after the map, update the array with new array.

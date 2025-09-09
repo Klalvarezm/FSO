@@ -6,10 +6,6 @@ const course = {name:'Half Stack application development',
                         ]
                }
 
-
-console.log("Hola",course.parts[1].name)
-
-
 const Header = () => {
   return (
     <div>
@@ -31,7 +27,7 @@ const Part =({partNumber})=>{
 const Total = () => {
   return (
     <div>
-      <p>Number of exercises : {exercises1 + exercises2 + exercises3}</p>
+      <p>Number of exercises : {course.parts[0].numExercises+course.parts[1].numExercises+course.parts[2].numExercises}</p>
     </div>
   )
 }
@@ -48,7 +44,7 @@ const App = () => {
       <Part partNumber={0}></Part>
       <Part partNumber={1}></Part>
       <Part partNumber={2}></Part>
-      
+      <Total/>
     </div>
   )
 }
